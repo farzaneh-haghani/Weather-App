@@ -38,7 +38,7 @@ body {
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
 }
 
-.temperature,
+.temperature-section,
 .location-timezone {
   height: 10vh;
   display: flex;
@@ -52,11 +52,22 @@ body {
   font-size: 30px;
 }
 
-.temperature h2 {
+.temperature-section h2 {
   font-size: 40px;
 }
 
 img {
   width: 200px;
   height: 200px;
+}
+
+@media screen and (max-width: 499px) {
+  .container {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 500px) {
+  .container {
+    width: 50%;
+  }
 }
