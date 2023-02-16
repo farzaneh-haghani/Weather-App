@@ -5,31 +5,44 @@
 }
 
 body {
-  height: 100vh;
+  font-family: sans-serif;
+  color: white;
+}
+
+.container {
+  height: 90vh;
+  width: 30%;
+  background-color: lightblue;
+  position: relative;
+  -webkit-transform: translate(-50%, 5%);
+  transform: translate(-50%, 5%);
+}
+
+.container,
+.wrapper {
+  top: 50%;
+  left: 50%;
+}
+
+.wrapper {
+  height: 80vh;
+  width: 90%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 5ch;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   background: linear-gradient(rgb(47, 150, 163), rgb(48, 62, 143));
-  font-family: sans-serif;
-  color: white;
 }
 
-.location,
-.temperature {
-  height: 30vh;
-  width: 50%;
+.temperature,
+.location-timezone {
+  height: 10vh;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-}
-
-.temperature {
-  flex-direction: column;
-}
-
-.degree-section {
-  display: flex;
   align-items: center;
   cursor: pointer;
 }
@@ -39,6 +52,11 @@ body {
   font-size: 30px;
 }
 
-.degree-section h2 {
+.temperature h2 {
   font-size: 40px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
 }
